@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando coisas</title>
+    <style>
+        #divisao{
+            font: normal 20pt times;
+            background: purple ;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            display: inline-block;
+            }
+        #divisao2{
+            font: normal 20pt times;
+            background: blueviolet;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            display: inline-block;
+            }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Times, serif;">olá, seja muito bem-vindo :D</h1>
+    
+    <div id="divisao" onclick="clicar_1()" onmouseout="sair_1()">clique aqui</div>
+    <div id="divisao2" onclick="clicar_2()" onmouseout="sair_2()">clique aqui</div>
+    
+    <script>
+        var div1 = window.document.getElementById('divisao')
+        var div2 = window.document.getElementById('divisao2')
+        function clicar_1(){
+            div1.style.background = "purple"
+            div1.innerText = "oioioioioi"
+        }
+        function sair_1(){
+            div1.style.background = "purple"
+            div1.innerText = "clique aqui"
+        }
+        function clicar_2(){
+            div2.style.background = "blueviolet"
+            div2.innerText = "tudo bem?"
+        }
+        function sair_2(){
+            div2.style.background = "blueviolet"
+            div2.innerText = "clique aqui"
+        }
+    </script>
+</body>
+</html>
